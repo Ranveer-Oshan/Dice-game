@@ -52,7 +52,8 @@ document.querySelector('.btn-hold').addEventListener('click', function (){
         if (scores[activePlayer] >= winningScore) {
 
             document.querySelector('#name-' + activePlayer).textContent = 'Winner';
-            document.querySelector('.dice').style.display = 'none';
+            document.querySelector('#dice-1').style.display = 'none';
+            document.querySelector('#dice-2').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             gamePlaying = false;
