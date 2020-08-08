@@ -72,8 +72,8 @@ function init(){
     activePlayer = 0;
     gamePlaying = true;
 
-   // document.querySelector('#dice-1').style.display = 'none';
-    //document.querySelector('#dice-2').style.display = 'none';
+   document.querySelector('#dice-1').style.display = 'none';
+   document.querySelector('#dice-2').style.display = 'none';
 
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
@@ -102,7 +102,7 @@ function nextPlayer(){
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
 
-    //document.querySelector('#dice-1').style.display = 'none';
-    //document.querySelector('#dice-2').style.display = 'none';
+    document.querySelector('#dice-1').style.display = 'none';
+    document.querySelector('#dice-2').style.display = 'none';
 }
 
